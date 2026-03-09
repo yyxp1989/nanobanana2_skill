@@ -1,6 +1,6 @@
-# Nanobanana 🔮
+# Nanobanana2 Openclaw SKILL 🔮
 
-> 使用 Google Gemini 模型进行 AI 图像生成与编辑
+> 使用 Telegram 与Openclaw Agent对话执行AI生图的skill，使用gemini-3.1-flash-image-preview (Nanobanana2)模型
 
 ## 特性
 
