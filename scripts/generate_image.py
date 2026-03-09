@@ -437,9 +437,12 @@ def main():
     parser.add_argument("--history-dir", default=DEFAULT_HISTORY_DIR, help="历史文件目录")
     parser.add_argument("--session-id", help="会话ID（用于区分不同会话）")
     parser.add_argument("--show-history", action="store_true", help="显示当前对话历史")
+    parser.add_argument("-m", "--model", default=None, help="模型名称")
     
     args = parser.parse_args()
     
+    if args.model is None:
+        args.model = DEFAULT_MODEL
     nanobanana = Nanobanana(
         api_list=DEFAULT_API_LIST,
         model=args.model,
@@ -495,8 +498,8 @@ def main():
             print(f"📋 类型: {result.get('last_type', 'new')}")
             print(f"📋 会话ID: {result.get('session_id', 'N/A')}")
             labels = ["main", "switch1", "switch2"]
-        api_label = labels[self.current_api_index] if self.current_api_index < len(labels) else f"switch{self.current_api_index}"
-        print(f"📡 使用API: {api_label}")
+            api_label = labels[self.current_api_index] if self.current_api_index < len(labels) else f"switch{self.current_api_index}"
+            print(f"📡 使用API: {api_label}")
 
 
 if __name__ == "__main__":

@@ -6,15 +6,15 @@
 # =====================================================
 
 # -------------------- API[main] (主API) --------------------
-API_KEY=sk-your-main-api-key
+API_KEY=sk-sHrzuzcUEzALMi1gr9IHRIqp7R4cj8HiFfHOrBXZzyOOxILj
 API_BASE=https://poloai.top/v1/chat/completions
 MODEL=gemini-3.1-flash-image-preview
 
 # -------------------- API[switch1] (备用API 1) --------------------
 # 可选配置，不配置则不使用
-# API_KEY2=sk-your-backup-key-1
-# API_BASE2=https://backup1.poloai.top/v1/chat/completions
-# MODEL2=gemini-3.1-flash-image-preview
+API_KEY2=sk-VhhGXIhLg3Ks7ssNwwD9mThJF6DbLr0bkBev8FYpuRYTQqu5
+API_BASE2=https://poloai.top/v1/chat/completions
+MODEL2=gemini-3.1-flash-image-preview
 
 # -------------------- API[switch2] (备用API 2) --------------------
 # 可选配置，不配置则不使用
@@ -28,10 +28,10 @@ OUTPUT_DIR=/home/yy/.openclaw/downloads/nanobanana
 # -------------------- 重试与熔断配置 --------------------
 
 # API超时时间(秒)，建议: 60-300
-API_TIMEOUT=120
+API_TIMEOUT=200
 
 # 重试次数 (0=不重试, 默认2)
 API_RETRY=2
 
 # 熔断阈值 (连续失败N次后冷却60秒, 默认3)
-CIRCUIT_BREAKER_THRESHOLD=3
+CIRCUIT_BREAKER_THRESHOLD=2
