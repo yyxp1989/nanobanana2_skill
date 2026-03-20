@@ -59,8 +59,8 @@ API_BASE3=https://your-third-api-endpoint.example/v1/chat/completions
 MODEL3=gemini-3.1-flash-image-preview
 
 # 运行参数（可选）
-OUTPUT_DIR=/home/yy/.openclaw/downloads/nanobanana
-HISTORY_DIR=/home/yy/.openclaw/shared-skills/nanobanana/history
+OUTPUT_DIR=~/.openclaw/downloads/nanobanana
+HISTORY_DIR=~/.openclaw/shared-skills/nanobanana/history
 API_TIMEOUT=120
 API_RETRY=2
 CIRCUIT_BREAKER_THRESHOLD=3
