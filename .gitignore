@@ -1,0 +1,17 @@
+# secrets
+scripts/.user_api
+*.pem
+*.key
+.env
+.env.*
+
+# caches / local outputs
+history/*.json
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# local generated files
+*.log
+.DS_Store
